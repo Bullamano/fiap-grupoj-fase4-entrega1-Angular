@@ -9,6 +9,7 @@ import { GreeterAreaComponent } from './greeter-area/greeter-area.component';
 import { CustomGridComponent } from './custom-grid/custom-grid.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
+import { CustomCardComponent } from './custom-card/custom-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
     GreeterAreaComponent,
     CustomGridComponent,
     HomePageComponent,
-    TutorialPageComponent
+    TutorialPageComponent,
+    CustomCardComponent
   ],
   imports: [
     BrowserModule,
