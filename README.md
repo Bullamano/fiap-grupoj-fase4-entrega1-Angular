@@ -7,4 +7,4 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Rodando o servidor de desenvolvimento
 
-Rode `ng serve --open` no prompt para iniciar o servidor em `http://localhost:4200/`.
+Rode `ng serve --open` no prompt dentro da pasta `needhelp` para iniciar o servidor em `http://localhost:4200/`.
