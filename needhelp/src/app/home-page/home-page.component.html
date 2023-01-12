@@ -1,5 +1,8 @@
 
 <app-greeter-area></app-greeter-area>
 
-
-<p>home-page works!</p>
+<ul>
+    <li *ngFor="let tutorial of resultsAPI">
+        {{tutorial.title}}
+    </li>
+</ul>
