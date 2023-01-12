@@ -1,8 +1,22 @@
-
 <app-greeter-area></app-greeter-area>
 
-<ul>
-    <li *ngFor="let tutorial of resultsAPI">
-        {{tutorial.title}}
-    </li>
-</ul>
+<mat-grid-list class="Container-grid" cols="3" rowHeight="3:2">
+    <mat-grid-tile class='Container-tile' *ngFor="let tutorial of resultsAPI">
+        <!-- Box -->
+        <div class='Outer-box'>
+            <!-- Card -->
+            <div class='Custom-card'>
+                <!-- Card Content -->
+                <mat-card class="inside-card">
+                    <img mat-card-image class="Card-image" src={{tutorial.imageUrl}}
+                        onerror="this.src='../../assets/lightbulb-512.png';" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <div class='Title-box'>
+                            {{tutorial.title}}
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
