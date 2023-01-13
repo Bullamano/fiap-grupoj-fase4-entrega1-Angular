@@ -19,7 +19,7 @@ Com base em sites como o WikiHow e canais do youtube como o "Dad, how do I...", 
 
 ##
 
-## Rodando o servidor de desenvolvimento
+## Rodando a aplicação (servidor de desenvolvimento)
 
 Antes de rodar este projeto, certifique-se de que o projeto com a API esteja rodando e de que o runner informado naquele projeto foi rodado com sucesso populando a API.
 
