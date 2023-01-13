@@ -21,6 +21,30 @@ Com base em sites como o WikiHow e canais do youtube como o "Dad, how do I...", 
 
 ## Rodando o servidor de desenvolvimento
 
-Rode `ng serve --open` no prompt dentro da pasta `needhelp` para iniciar o servidor em `http://localhost:4200/`.
+Antes de rodar este projeto, certifique-se de que o projeto com a API esteja rodando e de que o runner informado naquele projeto foi rodado com sucesso populando a API.
+
+Em seguida, rode `ng serve --open` no prompt dentro da pasta `needhelp` para iniciar o servidor em `http://localhost:4200/`.
+
+##
+
+### Home Screen
+
+A tela principal da aplicação consiste em um <i>hub</i> com os diversos tutoriais presentes, fornecidos pela API:
+
+<p align="center">
+  <img src="./readmeAssets/HomePage.png" alt="Tela principal com imagens dos itens de tutoriais">
+</p>
+
+Esta tela apresenta os tutoriais do runner rodado no projeto da API.
+
+##
+  
+### Tutorial Screen
+
+Ao clicar em qualquer um dos tutoriais da tela principal, uma nova tela aparecerá, sendo populada com as informações do tutorial escolhido:
+
+<p align="center">
+  <img src="./readmeAssets/TutorialPage.png" alt="Tela de tutorial com as informações pertinentes">
+</p>
 
 ##
