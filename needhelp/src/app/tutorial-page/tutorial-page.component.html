@@ -1,1 +1,22 @@
-<p>tutorial-page works!</p>
+<div class="Contents">
+    <div class="Material-holder">
+        <div class="Upper-holder">
+            <div class="Image-holder">
+                <img class="Tutorial-image" src="{{resultsAPI.imageUrl}}"
+                    onerror="this.src='../../assets/lightbulb-512.png';" alt="Imagem de {{resultsAPI.title}}" />
+            </div>
+            <div class="Limit-width-box">
+                <h1>{{resultsAPI.title}}</h1>
+            </div>
+        </div>
+        <h2>Você precisa de...</h2>
+        <div class="Limit-width-box">
+            <h3>{{resultsAPI.materials}}</h3>
+        </div>
+    </div>
+    <h2>Como fazer...</h2>
+    <div class="Limit-width-box">
+        <h3>{{resultsAPI.steps}}</h3>
+    </div>
+</div>
+<mat-divider></mat-divider>

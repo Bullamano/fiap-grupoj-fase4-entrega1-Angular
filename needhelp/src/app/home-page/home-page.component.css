@@ -4,6 +4,7 @@
 
 .Outer-box {
     max-width: 300px;
+    cursor: pointer;
 }
 
 .inside-card {
@@ -24,4 +25,9 @@
     font-size: large;
     padding-top: 10px;
     text-align: center;
+}
+
+.mat-divider {
+    margin: 20px;
+    border-top-color: #999999;
 }

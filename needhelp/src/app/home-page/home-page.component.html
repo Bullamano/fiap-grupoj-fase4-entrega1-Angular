@@ -1,15 +1,15 @@
 <app-greeter-area></app-greeter-area>
 
-<mat-grid-list class="Container-grid" cols="3" rowHeight="3:2">
+<mat-grid-list class="Container-grid" cols="3" rowHeight="3:2" *ngIf="didCallAPI">
     <mat-grid-tile class='Container-tile' *ngFor="let tutorial of resultsAPI">
         <!-- Box -->
-        <div class='Outer-box'>
+        <div class='Outer-box' [routerLink]="['/tutorial/', tutorial.id]">
             <!-- Card -->
             <div class='Custom-card'>
                 <!-- Card Content -->
                 <mat-card class="inside-card">
                     <img mat-card-image class="Card-image" src={{tutorial.imageUrl}}
-                        onerror="this.src='../../assets/lightbulb-512.png';" alt="Photo of a Shiba Inu">
+                        onerror="this.src='../../assets/lightbulb-512.png';" alt="Imagem de {{tutorial.title}}">
                     <mat-card-content>
                         <div class='Title-box'>
                             {{tutorial.title}}
@@ -20,3 +20,10 @@
         </div>
     </mat-grid-tile>
 </mat-grid-list>
+
+<mat-divider></mat-divider>
+
+<p *ngIf="!didCallAPI">
+    Não foram retornados resultados pela API. Por favor, certifique-se de que a API (que pode ser encontrada em
+    https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring) está rodando corretamente.
+</p>

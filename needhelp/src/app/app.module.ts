@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
@@ -26,7 +26,8 @@ import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
     HttpClientModule,
     AppRoutingModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

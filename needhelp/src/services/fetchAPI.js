@@ -3,6 +3,8 @@
  */
  const API = 'http://127.0.0.1:8080/api/v1/tutorialItem';
 
+//TODO Apagar esse fonte, não será usado
+
  /**
   * Função de retorno de todos os itens da API
   * @returns JSON com todos os itens da API
