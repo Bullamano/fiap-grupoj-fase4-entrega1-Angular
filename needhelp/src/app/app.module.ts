@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
@@ -25,9 +27,11 @@ import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    MatButtonModule,
     MatCardModule,
+    MatDividerModule,
     MatGridListModule,
-    MatDividerModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,12 @@
     border-top-color: #999999;
 }
 
+.Home-button {
+    position: fixed;
+    top: 10vh;
+    left: 5px;
+}
+
 /* Div para conter o card completo */
 .Material-holder {
     background-color: #92c2e4;
