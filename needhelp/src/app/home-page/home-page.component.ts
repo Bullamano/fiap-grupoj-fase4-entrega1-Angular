@@ -40,5 +40,29 @@ export class HomePageComponent implements OnInit {
     }
   }
 
+  buttonOutClicked() {
+    try {
+      fetch(
+        'http://localhost:666/api/v1/simple-data',
+        {
+          method: "GET",
+        }
+      )
+        .then(r => r.json())
+        .then(j => {
+
+          let s = JSON.stringify(j, null, 2);
+
+          alert(s);
+        })
+        .catch((error) => {
+          alert('Erro ao contatar a API de teste CORS! Verifique se o projeto presente em https://github.com/Bullamano/fiap-grupoj-fase4-entrega1-SimpleApp está rodando corretamente.');
+        });
+    }
+    catch {
+      alert('Erro ao contatar a API de teste CORS! Verifique se o projeto presente em https://github.com/Bullamano/fiap-grupoj-fase4-entrega1-SimpleApp está rodando corretamente.');
+    }
+  }
+
 }
 

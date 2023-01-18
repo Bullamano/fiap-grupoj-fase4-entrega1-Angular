@@ -1,5 +1,11 @@
 <app-greeter-area></app-greeter-area>
 
+<button (click)="buttonOutClicked()" mat-raised-button color="accent" aria-label="Important-button"
+    class="CORS-button">
+    Botão MUITO importante<br/>
+    <div class="Subtitle-button">(para testar CORS...)</div>
+</button>
+
 <mat-grid-list class="Container-grid" cols="3" rowHeight="3:2" *ngIf="didCallAPI">
     <mat-grid-tile class='Container-tile' *ngFor="let tutorial of resultsAPI">
         <!-- Box -->
@@ -20,10 +26,11 @@
         </div>
     </mat-grid-tile>
 </mat-grid-list>
-<p *ngIf="!didCallAPI">
-    Não foram retornados resultados pela API. Por favor, certifique-se de que a API (que pode ser encontrada em
-    https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring) está rodando corretamente e que o runner para
-    popular a API foi rodado com sucesso.
+<p class="Error-api-text" *ngIf="!didCallAPI">
+    Não foram retornados resultados pela API. Por favor, certifique-se de que a API (que pode ser encontrada em <a
+        href="https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring" target="_blank">
+        https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring</a>) está rodando corretamente e que o runner
+    para popular a API foi rodado com sucesso.
 </p>
 
 <mat-divider></mat-divider>
