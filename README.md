@@ -9,6 +9,8 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 Para que este projeto funcione corretamente, é necessário que o projeto presente em <a href="https://github.com/Bullamano/fiap-grupoj-fase3-entrega2-Spring">fiap-grupoj-fase3-entrega2-Spring</a> esteja rodando na máquina e que as instruções da secção "Como rodar o projeto" tenham sido seguidas (pois aquele projeto funciona como o backend deste).
 
+Também é necessário que o projeto <a href="https://github.com/Bullamano/fiap-grupoj-fase4-entrega1-SimpleApp">fiap-grupoj-fase4-entrega1-SimpleApp</a> esteja rodando de acordo com a sua secção "Rodando a aplicação" para que o teste de CORS requisitado na atividade possa ocorrer com sucesso.
+
 Este projeto é a versão em Angular do projeto presente em <a href="https://github.com/Bullamano/fiap-grupoj-fase3-entrega3-ReactForSpring">fiap-grupoj-fase3-entrega3-ReactForSpring</a>.
 
 ##
@@ -21,7 +23,7 @@ Com base em sites como o WikiHow e canais do youtube como o "Dad, how do I...", 
 
 ## Rodando a aplicação (servidor de desenvolvimento)
 
-Antes de rodar este projeto, certifique-se de que o projeto com a API esteja rodando e de que o runner informado naquele projeto foi rodado com sucesso populando a API.
+Antes de rodar este projeto, certifique-se de que o projeto com a API esteja rodando e de que o runner informado naquele projeto foi rodado com sucesso populando a API. Além disso, certifique-se de que a API simples para o teste de CORS também esteja rodando. Caso alguma destas duas APIs não esteja rodando, a aplicação apresentará textos requisitando que elas sejam iniciadas.
 
 Em seguida, rode `ng serve --open` no prompt dentro da pasta `needhelp` para iniciar o servidor em `http://localhost:4200/`.
 
@@ -36,6 +38,10 @@ A tela principal da aplicação consiste em um <i>hub</i> com os diversos tutori
 </p>
 
 Esta tela apresenta os tutoriais do runner rodado no projeto da API.
+
+#### Teste CORS
+
+Na tela principal há um botão na parte superior da tela, adicionado posteriormente ao seu desenvolvimento (por isso, não se encontra na imagem acima), que realiza uma chamada de API para teste CORS. Quando clicado, o botão realiza a chamada e o resultado desta chamada é apresentado em um `alert()` para o usuário.
 
 ##
   
