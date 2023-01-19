@@ -1,8 +1,10 @@
+/* Divisor material (override para modificar tema) */
 .mat-divider {
     margin: 20px;
     border-top-color: #999999;
 }
 
+/* Botão para retorno à home page */
 .Home-button {
     position: fixed;
     top: 10vh;

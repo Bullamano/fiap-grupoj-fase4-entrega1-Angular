@@ -14,19 +14,23 @@
     justify-content: center;
 }
 
+/* Título do greeter */
 .Greeter-title {
     font-size: 4em;
 }
 
+/* Texto do greeter */
 .Greeter-text {
     font-size: 1.3em;
     padding-bottom: 10px;
 }
 
+/* Imagem do greeter */
 .Lightbulb-Image {
     height: 350px;
 }
 
+/* Variação para a imagem e textos dependendo do tamanho da tela */
 @media only screen and (max-width: 900px) {
     .Lightbulb-Image {
         height: 200px;

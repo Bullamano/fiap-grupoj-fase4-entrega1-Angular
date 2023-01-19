@@ -1,18 +1,22 @@
+/* Grid material para os cards */
 .Container-grid {
     margin-bottom: 25px;
 }
 
+/* Div externa de cada card */
 .Outer-box {
     max-width: 300px;
     cursor: pointer;
 }
 
+/* Card material */
 .inside-card {
     background-color: #D5E9F7;
     border-radius: 25px;
     max-width: 400px;
 }
 
+/* Imagem do card */
 .Card-image {
     border-radius: 25px;
     max-height: 250px;
@@ -27,15 +31,18 @@
     text-align: center;
 }
 
+/* Divisor material (override para mudar tema) */
 .mat-divider {
     margin: 20px;
     border-top-color: #999999;
 }
 
+/* Texto de erro quando a API não responde corretamente */
 .Error-api-text {
     margin: 20px;
 }
 
+/* Botão de teste de CORS */
 .CORS-button {
     position: fixed;
     top: 5px;
@@ -43,6 +50,7 @@
     z-index: 200;
 }
 
+/* Subtítulo do botão */
 .Subtitle-button {
     font-size: 10px;
 }
